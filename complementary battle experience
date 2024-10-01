@@ -1,0 +1,43 @@
+a = input("Do  you know anything about z-move or g-maxing?")
+b = 'yes'
+if a == b:
+  type_out("Okay then lets get started of a battle with z moves", 0.05)
+  type_out("You are challenged by a pokemon named Mewtwo", 0.05)
+  type_out("You send out a pokemon named Gengar", 0.05)
+  type_out("Your moveset is shadow ball,shadow claw,shadow sneak,phantom force,z move never ending nightmare",0.05)
+  type_out("Hp of Meutwo is  400 and hp of gengar is 250")
+  meutwo = ("Psystrike", "Psychic", "Psybeam", "Close combat")
+  import random
+  cchoice = random.choice(meutwo)
+  type_out("Mewtwo uses " + cchoice, 0.05)
+  type_out("Hp of gengar is now 120")
+  d = input("First move of gengar:")
+  aa = 'shadow ball'
+  bb = 'shadow claw'
+  cc = 'shadow sneak'
+  dd = 'phantom force'
+  ee= 'z move never ending nightmare'
+  if d == aa:
+    type_out("You have used shadow ball", 0.05)
+    type_out("It's supper effective for Mewtwo ", 0.05)
+    type_out("Hp of meutwo is now 220", 0.05)
+  elif d == bb:
+    type_out("You have used shadow claw", 0.05)
+    type_out("It's supper effective for Mewtwo ", 0.05)
+    type_out("Hp of meutwo is now 220", 0.05)
+  elif d == cc:
+    type_out("You have used shadow sneak", 0.05)
+    type_out("It's supper effective for Mewtwo ", 0.05)
+    type_out("Hp of meutwo is now 220", 0.05)
+  elif d == dd:
+    type_out("You have used phantom force", 0.05)
+    type_out("It's supper effective for Mewtwo ", 0.05)
+    type_out("Hp of meutwo is now 220", 0.05)
+  else:
+    type_out("You have used z move ", 0.05)
+    type_out("It's supper effective for Mewtwo ", 0.05)
+    type_out("Hp of meutwo is now 0", 0.05)
+    type_out("You have won the battle", 0.05)
+else:
+  type_out("This Just gives you a complementary gaming experience", 0.05)
+  type_out("if you donot want this,then just close this window and go ", 0,05")
