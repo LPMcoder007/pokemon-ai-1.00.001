@@ -1,3 +1,13 @@
+import sys
+import time
+
+
+def type_out(text, delay=0.1):
+  for char in text:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(delay)
+  print()
 a = input("Do  you know anything about z-move or g-maxing?")
 b = 'yes'
 if a == b:
