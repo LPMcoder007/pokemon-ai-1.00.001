@@ -1,0 +1,408 @@
+name = "Gengar"
+typ = "Ghost/poison"
+serialno = 138
+import sys
+import time
+
+
+def type_out(text, delay=0.1):
+      for char in text:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(delay)
+      print()  # Move to the next line after typing out the text
+
+
+type_out("Welcome to the pokemon progaram crated by The GOAT", 0.05)
+print(
+    "My favourite pikemon is",
+    name,
+    "and its type is",
+    typ,
+)
+type_out("There are totally 18 types in pokemon", 0.05)
+favpok = input("What is your Favourite pokemon:")
+type_out("yes " + favpok + " is indeed a very good pokemon with decent stats",
+         0.05)
+
+#total no. of pokemon
+a = int(input("Can you guess the total no of pokemon in the pokemon universe"))
+b = 1008
+if a == b:
+      type_out(
+          "you have guessed it correctly.So I guess you are THE GOAT OF POKEMON",
+          0.05)
+      print("So i guess you would know abt different types in pokemon")
+else:
+      type_out(
+          "Oh you have guessed it wrongly.THe total no. of pokemon is 1008 as of 2023",
+          0.05)
+#types
+c = input("Do you know abt. types in pokemon universe (yes/no):")
+d = "no"
+if c == d:
+      type_out(
+          "Ok let me explan to you.There are totally 18 types in pokemon universe.As you said your favourite pokemon "
+          + favpok + " will have one or two as their type in these 18  types",
+          0.05)
+else:
+      g = int(
+          input(
+              "As you said you know about the types ,can you say what is the total no. of types in pokemon universe"
+          ))
+      h = 18
+      if g == h:
+            print("yes you have guessed it correctly")
+            e = input("Then can you say which is your favourite type")
+            print("Yes", e, "is a very good type")
+      else:
+            type_out(
+                "Oh you have guessed it wrongly.The total no. of types of pokemon universe is 18 as of 2023",
+                0.05)
+print()
+
+y = input("Do you know how to do a pokemon battle (yes/no)")
+z = ("yes")
+if y == z:
+      type_out("Then ok we can do a pokemon battle", 0.05)
+      type_out("I will take zygarde and you may take archeus", 0.05)
+      type_out(
+          "Moveset of archeus is judgement,shodow sneak,earthquake,hyperbeam",
+          0.05)
+      type_out("Hp of archeus is 524 and Hp of zygarde is 504 ", 0.05)
+      aa = input("First move of arecheus:")
+      k = ("judgement")
+      j = ("shadow sneak")
+      l = ("earthquake")
+      m = ("hyperbeam")
+      aichoice = ("Core enforcer", "Thousand arrows", "Thousand waves",
+                  "Earth Quake")
+      import random
+      computerchoice = random.choice(aichoice)
+      if aa == k:
+            type_out("You have used Judgement", 0.05)
+            type_out("Hp of zygarde is now 404", 0.05)
+      if aa == j:
+            type_out("You Have Used Shadow Sneak", 0.05)
+            type_out("Hp of zygarde is now 404", 0.05)
+      if aa == l:
+            type_out("You have used Earthquake", 0.05)
+            type_out("Hp of zygarde is now 404", 0.05)
+      if aa == m:
+            type_out("You have used Hyperbeam", 0.05)
+            type_out("Hp of zygarde is now 404", 0.05)
+      print("Zygarde used ", computerchoice)
+
+      type_out("HP of archeus is now 424", 0.05)
+
+      bb = input("Second move of archeus:")
+      if bb == k:
+            type_out("You have used Judgement", 0.05)
+            type_out("Hp of zygarde is now 304", 0.05)
+      if bb == j:
+            type_out("You Have Used Shadow Sneak", 0.05)
+            type_out("Hp of zygarde is now 304", 0.05)
+      if bb == l:
+            type_out("You have used Earthquake", 0.05)
+            type_out("Hp of zygarde is now 304", 0.05)
+      if bb == m:
+            type_out("You have used Hyperbeam", 0.05)
+            type_out("Hp of zygarde is now 304", 0.05)
+      computerchoice = random.choice(aichoice)
+      print("Zygarde used ", computerchoice)
+      type_out("HP of archeus is now 324", 0.05)
+
+      cc = input("Third move of archeus:")
+      if cc == k:
+            type_out("You have used Judgement", 0.05)
+            type_out("Hp of zygarde is now 204", 0.05)
+      if cc == j:
+            type_out("You Have Used Shadow Sneak", 0.05)
+            type_out("Hp of zygarde is now 204", 0.05)
+      if cc == l:
+            type_out("You have used Earthquake", 0.05)
+            type_out("Hp of zygarde is now 204", 0.05)
+      if cc == m:
+            type_out("You have used Hyperbeam", 0.05)
+            type_out("Hp of zygarde is now 204", 0.05)
+      type_out(
+          "To make this battle more interesting Zygarde used Zmove Continental crush",
+          0.05)
+      type_out("HP of archeus is now 124", 0.05)
+      dd = input(" Do you want to do Z-Move as the fourth move of archeus:")
+      se = ("yes")
+      if dd == se:
+            type_out("You have used Z-Move Break Neck Blitz", 0.05)
+            type_out("Hp of zygarde is now 4", 0.05)
+      else:
+            type_out("You have used Judgement", 0.05)
+            type_out("Hp of zygarde is now 84", 0.05)
+      computerchoice = random.choice(aichoice)
+      print("Zygarde used ", computerchoice)
+      print("Hence, Areceus fainted")
+      type_out("Zygarde has won the battle", 0.05)
+      print(
+          "You have 2 options to take.You have to take either Gengar or Mimikyu"
+      )
+      ee = input("Which one do you want to take:(type everything in small letter)")
+      jj = ("gengar")
+      kk = ("mimikyu")
+      if ee == jj:
+            type_out("You have taken Gengar", 0.05)
+            type_out(
+                "Your moveset is shadow ball,shadow sneak,shadow claw,crunch",
+                0.05)
+            type_out("Hp of Gengar is 220", 0.05)
+      if ee == kk:
+            type_out("You have taken Mimkyu", 0.05)
+            type_out(
+                "Your moveset is shadow ball,shadow claw,shadow sneak,crunch",
+                0.05)
+            type_out("Hp of mimikyu is 220", 0.05)
+      type_out("I have taken Greninja as my pokemon", 0.05)
+      type_out("Hp ofGreninja is 280", 0.05)
+      move = ("Dark pulse", "Water shuricane", "Hydro pump", "Ice beam")
+      cchoice = random.choice(move)
+      ww = ("shadow ball")
+      ll = ("shadow claw")
+      pp = ("shadow sneak")
+      qq = ("crunch")
+      aaa = input("First move:")
+      if aaa == ww:
+            type_out("You have used Shadow ball", 0.05)
+            type_out("Hp of Greninja is now 190", 0.05)
+      if aaa == ll:
+            type_out("You have used Shadow claw", 0.05)
+            type_out("Hp of Greninja is now 190", 0.05)
+      if aaa == pp:
+            type_out("You have used Shadow sneak", 0.05)
+            type_out("Hp of Greninja is now 190", 0.05)
+      if aaa == qq:
+            type_out("You have used Crunch", 0.05)
+            type_out("Hp of Greninja is now 190", 0.05)
+      cchoice = random.choice(move)
+      print("Greninja used ", cchoice)
+      type_out("Hp of your pokemon is now 130", 0.05)
+      bbb = input("Second move:")
+      if bbb == ww:
+            type_out("You have used Shadow ball", 0.05)
+            type_out("Hp of Greninja is now 100", 0.05)
+      if bbb == ll:
+            type_out("You have used Shadow claw", 0.05)
+            type_out("Hp of Greninja is now 100", 0.05)
+      if bbb == pp:
+            type_out("You have used Shadow sneak", 0.05)
+            type_out("Hp of Greninja is now 100", 0.05)
+      if bbb == qq:
+            type_out("You have used Crunch", 0.05)
+            type_out("Hp of Greninja is now 100", 0.05)
+      cchoice = random.choice(move)
+      print("Greninja used ", cchoice)
+      type_out("Hp of your pokemon is now 60", 0.05)
+      ccc = input("Third move:")
+      if ccc == ww:
+            type_out("You have used Shadow ball", 0.05)
+            type_out("Hp of Greninja is now 10", 0.05)
+      if ccc == ll:
+            type_out("You have used Shadow claw", 0.05)
+            type_out("Hp of Greninja is now 10", 0.05)
+      if ccc == pp:
+            type_out("You have used Shadow sneak", 0.05)
+            type_out("Hp of Greninja is now 10", 0.05)
+      if ccc == qq:
+            type_out("You have used Crunch", 0.05)
+            type_out("Hp of Greninja is now 10", 0.05)
+      cchoice = random.choice(move)
+      print("Greninja used ", cchoice)
+      type_out("Hp of your pokemon is now 0", 0.05)
+      type_out("You have fainted", 0.05)
+      type_out("You have lost both of the matches", 0.05)
+      type_out("So I am the GOAT of pokemon battles", 0.05)
+else:
+      type_out("Ok then I will explain you about pokemon battle", 0.05)
+      print()
+      type_out(
+          "Pokémon battles are a core part of the Pokémon experience! They involve trainers commanding their Pokémon to use various moves to defeat their opponents",
+          0.05)
+      nnn = input("Do you understand about pokemon battle:")
+      mmm = ("yes")
+      if nnn == mmm:
+            type_out("Then ok we can do a pokemon battle", 0.05)
+            type_out("I will take zygarde and you may take archeus", 0.05)
+            type_out(
+                "Moveset of archeus is judgement,shodow sneak,earthquake,hyperbeam",
+                0.05)
+            type_out("Hp of archeus is 524 and Hp of zygarde is 504 ", 0.05)
+            aa = input("First move of arecheus:")
+            k = ("judgement")
+            j = ("shadow sneak")
+            l = ("earthquake")
+            m = ("hyperbeam")
+            aichoice = ("Core enforcer", "Thousand arrows", "Thousand waves","Earth Quake")
+            import random
+            computerchoice = random.choice(aichoice)
+            if aa == k:
+                  type_out("You have used Judgement", 0.05)
+                  type_out("Hp of zygarde is now 404", 0.05)
+            if aa == j:
+                  type_out("You Have Used Shadow Sneak", 0.05)
+                  type_out("Hp of zygarde is now 404", 0.05)
+            if aa == l:
+                  type_out("You have used Earthquake", 0.05)
+                  type_out("Hp of zygarde is now 404", 0.05)
+            if aa == m:
+                  type_out("You have used Hyperbeam", 0.05)
+                  type_out("Hp of zygarde is now 404", 0.05)
+            computerchoice = random.choice(aichoice)
+            print("Zygarde used ", computerchoice)
+
+            type_out("HP of archeus is now 424", 0.05)
+
+            bb = input("Second move of archeus:")
+            if bb == k:
+                  type_out("You have used Judgement", 0.05)
+                  type_out("Hp of zygarde is now 304", 0.05)
+            if bb == j:
+                  type_out("You Have Used Shadow Sneak", 0.05)
+                  type_out("Hp of zygarde is now 304", 0.05)
+            if bb == l:
+                  type_out("You have used Earthquake", 0.05)
+                  type_out("Hp of zygarde is now 304", 0.05)
+            if bb == m:
+                  type_out("You have used Hyperbeam", 0.05)
+                  type_out("Hp of zygarde is now 304", 0.05)
+            computerchoice = random.choice(aichoice)
+            print("Zygarde used ", computerchoice)
+            type_out("HP of archeus is now 324", 0.05)
+
+            cc = input("Third move of archeus:")
+            if cc == k:
+                  type_out("You have used Judgement", 0.05)
+                  type_out("Hp of zygarde is now 204", 0.05)
+            if cc == j:
+                  type_out("You Have Used Shadow Sneak", 0.05)
+                  type_out("Hp of zygarde is now 204", 0.05)
+            if cc == l:
+                  type_out("You have used Earthquake", 0.05)
+                  type_out("Hp of zygarde is now 204", 0.05)
+            if cc == m:
+                  type_out("You have used Hyperbeam", 0.05)
+                  type_out("Hp of zygarde is now 204", 0.05)
+            type_out(
+                "To make this battle more interesting Zygarde used Zmove Continental crush",
+                0.05)
+            type_out("HP of archeus is now 124", 0.05)
+            dd = input(
+                " Do you want to do Z-Move as the fourth move of archeus:")
+            se = ("yes")
+            if dd == se:
+                  type_out("You have used Z-Move Break Neck Blitz", 0.05)
+                  type_out("Hp of zygarde is now 4", 0.05)
+            else:
+                  type_out("You have used Judgement", 0.05)
+                  type_out("Hp of zygarde is now 84", 0.05)
+            computerchoice = random.choice(aichoice)
+            print("Zygarde used ", computerchoice)
+            print("Hence, Areceus fainted")
+            type_out("Zygarde has won the battle", 0.05)
+            print(
+                "You have 2 options to take.You have to take either Gengar or Mimikyu"
+            )
+            ee = input(
+                "Which one do you want to take (type everything in small letter):"
+            )
+            jj = ("gengar")
+            kk = ("mimikyu")
+            if ee == jj:
+                  type_out("You have taken Gengar", 0.05)
+                  type_out(
+                      "Your moveset is shadow ball,shadow sneak,shadow claw,crunch",
+                      0.05)
+                  type_out("Hp of Gengar is 220", 0.05)
+            if ee == kk:
+                  type_out("You have taken Mimkyu", 0.05)
+                  type_out(
+                      "Your moveset is shadow ball,shadow claw,shadow sneak,crunch",
+                      0.05)
+                  type_out("Hp of mimikyu is 220", 0.05)
+            type_out("I have taken Greninja as my pokemon", 0.05)
+            type_out("Hp of Greninja is 280", 0.05)
+            move = ("Dark pulse", "Water shuricane", "Hydro pump", "Ice beam")
+            cchoice = random.choice(move)
+            ww = ("shadow ball")
+            ll = ("shadow claw")
+            pp = ("shadow sneak")
+            qq = ("crunch")
+            aaa = input("First move:")
+            if aaa == ww:
+                  type_out("You have used Shadow ball", 0.05)
+                  type_out("Hp of Greninja is now 190", 0.05)
+            if aaa == ll:
+                  type_out("You have used Shadow claw", 0.05)
+                  type_out("Hp of Greninja is now 190", 0.05)
+            if aaa == pp:
+                  type_out("You have used Shadow sneak", 0.05)
+                  type_out("Hp of Greninja is now 190", 0.05)
+            if aaa == qq:
+                  type_out("You have used Crunch", 0.05)
+                  type_out("Hp of Greninja is now 190", 0.05)
+            cchoice = random.choice(move)
+            print("Greninja used ", cchoice)
+            type_out("Hp of your pokemon is now 130", 0.05)
+            bbb = input("Second move:")
+            if bbb == ww:
+                  type_out("You have used Shadow ball", 0.05)
+                  type_out("Hp of Greninja is now 100", 0.05)
+            if bbb == ll:
+                  type_out("You have used Shadow claw", 0.05)
+                  type_out("Hp of Greninja is now 100", 0.05)
+            if bbb == pp:
+                  type_out("You have used Shadow sneak", 0.05)
+                  type_out("Hp of Greninja is now 100", 0.05)
+            if bbb == qq:
+                  type_out("You have used Crunch", 0.05)
+                  type_out("Hp of Greninja is now 100", 0.05)
+            cchoice = random.choice(move)
+            print("Greninja used ", cchoice)
+            type_out("Hp of your pokemon is now 60", 0.05)
+            ccc = input("Third move:")
+            if ccc == ww:
+                  type_out("You have used Shadow ball", 0.05)
+                  type_out("Hp of Greninja is now 10", 0.05)
+            if ccc == ll:
+                  type_out("You have used Shadow claw", 0.05)
+                  type_out("Hp of Greninja is now 10", 0.05)
+            if ccc == pp:
+                  type_out("You have used Shadow sneak", 0.05)
+                  type_out("Hp of Greninja is now 10", 0.05)
+            if ccc == qq:
+                  type_out("You have used Crunch", 0.05)
+                  type_out("Hp of Greninja is now 10", 0.05)
+            cchoice = random.choice(move)
+            print("Greninja used ", cchoice)
+            type_out("Hp of your pokemon is now 0", 0.05)
+            type_out("You have fainted", 0.05)
+            type_out("You have lost both of the matches", 0.05)
+            type_out("So I am the GOAT of pokemon battles", 0.05)
+      else:
+            type_out("Ok then I will explain you about pokemon battle", 0.0)
+            type_out(
+                "Pokemon Battle is a way in which the trainers show their skills of themselves and their pokemon",
+                0.05)
+            type_out(
+                "Pokemon battles are a core part of the Pokémon experience! They involve in battling of different pokemon",
+                0.05)
+            type_out(
+                "So you are not interested in this pokemn battle it seems so we can go to any other topic related to pokemon",
+                0.05)
+type_out("Thats all in this pokemon ai .", 0.05)
+type_out("I hope you enjoyed this pokemon ai", 0.05)
+type_out("Thank you for using this pokemon ai", 0.05)
+type_out(
+    "This program was made by THE GOAT OF POKEMON or Legendry Pokemon Master",
+    0.05)
+type_out("If you like this basic model of ai just give a like symbol", 0.05)
+print()
+
+print("if you want to know more abt pokemon universe refer this link:")
+print("https://bulbapedia.bulbagarden.net/wiki/Main_Page")
